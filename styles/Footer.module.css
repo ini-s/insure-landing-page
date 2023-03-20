@@ -76,10 +76,34 @@
     flex-wrap: wrap;
 }
 
+.col {
+    flex-basis: 250px;
+}
+
 @media screen and (max-width: 564px) {
 
     .navFlexContainer {
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 574px) and (max-width: 800px) {
+
+    .navFlexContainer {
+        justify-content: space-around;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .col {
+        flex-basis: 290px;
+    }
+}
+
+@media screen and (min-width: 704px) {
+    .col {
+        flex-basis: 300px;
     }
 }
 
@@ -110,9 +134,9 @@
     }
 }
 
-@media screen and (max-width: 969px) {
+@media screen and (min-width: 900px) {
     .col {
-        flex-basis: 250px;
+        flex-basis: unset;
     }
 }
 
