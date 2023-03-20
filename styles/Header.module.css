@@ -82,15 +82,16 @@
     padding: 0.5rem 2rem;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
-.navPlan:hover{
+.navPlan:hover {
     color: white;
     background-color: black;
 }
 
-@media screen and (min-width: 390px) {
+
+@media screen and (min-width: 700px) {
     .bgMobileNav {
         object-fit: cover;
     }

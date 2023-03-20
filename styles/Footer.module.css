@@ -18,7 +18,7 @@
     transition: 0.4s ease;
 }
 
-.icon:hover{
+.icon:hover {
     color: black;
 }
 
@@ -55,7 +55,7 @@
     color: hsl(270, 9%, 17%);
 }
 
-.footerLink:hover{
+.footerLink:hover {
     text-decoration: underline;
 }
 
@@ -69,17 +69,24 @@
     z-index: 4;
 }
 
+.navFlexContainer,
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 564px) {
+
+    .navFlexContainer {
+        justify-content: center;
+    }
+}
 
 @media screen and (min-width: 767px) {
     .footer {
         text-align: left;
-        padding: 4rem 5rem;
-    }
-
-    .navFlexContainer,
-    .footerTop {
-        display: flex;
-        justify-content: space-between;
+        padding: 4rem;
     }
 
     .logo,
@@ -97,12 +104,19 @@
     .bgFooterMobile {
         display: none;
     }
-    .p{
+
+    .p {
         margin-top: 1rem;
     }
 }
 
-@media screen and (min-width: 969px) {
+@media screen and (max-width: 969px) {
+    .col {
+        flex-basis: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .footer {
         padding: 4rem 10rem;
     }

@@ -8,7 +8,6 @@
     margin: 0 auto 2rem auto;
     background-color: hsl(270, 9%, 17%);
     opacity: 0.6;
-
 }
 
 .heading2,
@@ -94,6 +93,12 @@
     display: none;
 }
 
+@media screen and (min-width: 685px) {
+    .heading2b {
+        font-size: 2.5rem;
+    }
+}
+
 @media screen and (min-width: 767px) {
     .middle {
         padding: 15rem 5rem 5rem 5rem;
@@ -106,7 +111,7 @@
         text-align: center;
     }
 
-    .heading2{
+    .heading2 {
         text-align: center;
     }
 
@@ -116,11 +121,10 @@
 
     .violet {
         margin-top: 5rem;
-        padding: 2rem 5rem;
+        padding: 3.3rem 5rem;
     }
 
     .heading2b {
-        font-size: 2.5rem;
         flex-basis: 60%;
     }
 
@@ -137,14 +141,17 @@
         justify-content: space-between;
         align-items: center;
     }
-}
 
-
-@media screen and (min-width: 900px) {
-    .violet {
-        padding-block: 3.3rem;
+    .heading2b {
+        margin: 0;
     }
+
+    .middle {
+        padding: 10rem 4rem 5rem 4rem;
+    }
+
 }
+
 
 @media screen and (min-width: 1100px) {
     .violetBreak {
@@ -154,7 +161,7 @@
 
 @media screen and (min-width: 1060px) {
     .violet {
-        padding-block: 3.3rem !important;
+        padding-block: 4.8rem !important;
     }
 }
 
@@ -164,28 +171,40 @@
     }
 
     .violet {
-        padding-block: 2.7rem !important;
+        padding-block: 4.2rem !important;
+    }
+}
+
+@media screen and (min-width: 868px) {
+    .violet {
+        padding-block: 5rem;
     }
 }
 
 @media screen and (min-width: 969px) {
-    .middle {
-        padding: 15rem 10rem 5rem 10rem;
-    }
 
-    .violet {
-        padding-block: 2rem;
+    .middle {
+        padding: 15rem 4rem 5rem 4rem;
     }
 
     .middleFlexBox {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .middleFlexBox, .heading2{
+    .middleFlexBox,
+    .heading2 {
         text-align: left;
     }
-     .line {
+
+    .line {
         width: 150px;
         margin: 0 0 3rem 0;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .middle {
+        padding: 15rem 10rem 5rem 10rem;
     }
 }
