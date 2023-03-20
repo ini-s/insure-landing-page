@@ -16,8 +16,22 @@ export default function Header() {
                 width={112}
                 height={18}
             />
-            {/* <nav className={styles.mainNav}>
-            </nav> */}
+            <nav className={styles.mainNav}>
+                <ul className={styles.mainNavUl}>
+                    <li className={styles.mainNavList}>
+                        <a className={styles.mainNavLink}>How we work</a>
+                    </li>
+                    <li className={styles.mainNavList}>
+                        <a className={styles.mainNavLink}>Blog</a>
+                    </li>
+                    <li className={styles.mainNavList}>
+                        <a className={styles.mainNavLink}>Account</a>
+                    </li>
+                    <li className={styles.navPlan}>
+                        <a>View plans</a>
+                    </li>
+                </ul>
+            </nav>
             {
                 !active ?
                     <Image

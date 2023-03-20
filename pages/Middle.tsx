@@ -60,7 +60,7 @@ export default function Middle() {
             <div className={styles.violet}>
                 <div className={styles.workText}>
                     <h2 className={styles.heading2b}>
-                        Find out more about how we work
+                        Find out more <br className={styles.violetBreak}/> about how we work
                     </h2>
                     <button className={styles.workBtn}>
                         How we work
@@ -72,6 +72,13 @@ export default function Middle() {
                     alt="bg-pattern-how-we-work-mobile"
                     width={176}
                     height={317}
+                />
+                <Image
+                    className={styles.bgWorkDesktop}
+                    src="/images/bg-pattern-how-we-work-desktop.png"
+                    alt="bg-pattern-how-we-work-desktop"
+                    width={434}
+                    height={250}
                 />
             </div>
         </section>

@@ -18,10 +18,18 @@
     transition: 0.4s ease;
 }
 
+.icon:hover{
+    color: black;
+}
+
 .bgFooterMobile {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.bgFooterDesktop {
+    display: none;
 }
 
 .line {
@@ -29,6 +37,7 @@
     height: 0.5px;
     margin: 2rem auto;
     background-color: hsl(273, 4%, 51%);
+    opacity: 0.6;
 }
 
 .p,
@@ -46,6 +55,55 @@
     color: hsl(270, 9%, 17%);
 }
 
+.footerLink:hover{
+    text-decoration: underline;
+}
+
 .navList {
     margin-bottom: 1rem;
+}
+
+.nav,
+.footerTop {
+    position: relative;
+    z-index: 4;
+}
+
+
+@media screen and (min-width: 767px) {
+    .footer {
+        text-align: left;
+        padding: 4rem 5rem;
+    }
+
+    .navFlexContainer,
+    .footerTop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo,
+    .footerIcons {
+        margin-bottom: 0;
+    }
+
+    .bgFooterDesktop {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .bgFooterMobile {
+        display: none;
+    }
+    .p{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 969px) {
+    .footer {
+        padding: 4rem 10rem;
+    }
 }

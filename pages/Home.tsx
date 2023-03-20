@@ -15,11 +15,12 @@ export default function Home() {
                 className={styles.introDesktop}
                 src="/images/image-intro-desktop.jpg"
                 alt="intro-desktop"
-                width={375}
-                height={451}
+                width={540}
+                height={650}
             />
             <div className={styles.violet}>
                 <div className={styles.text}>
+                    <div className={styles.line}></div>
                     <h1 className={styles.heading1}>
                         Humanizing <br /> your insurance.
                     </h1>
@@ -45,6 +46,20 @@ export default function Home() {
                     alt="bg-pattern-intro-right-mobile"
                     width={124}
                     height={330}
+                />
+                 <Image
+                    className={styles.bgIntroLeftDesktop}
+                    src="/images/bg-pattern-intro-left-desktop.png"
+                    alt="bg-pattern-intro-left-desktop"
+                    width={195}
+                    height={504}
+                />
+                <Image
+                    className={styles.bgIntroRightDesktop}
+                    src="/images/bg-pattern-intro-right-desktop.png"
+                    alt="bg-pattern-intro-right-desktop"
+                    width={436}
+                    height={593}
                 />
             </div>
         </section>

@@ -22,8 +22,15 @@ main {
 a,
 button {
   cursor: pointer;
+  transition: 0.4s ease;
 }
 
 ul li {
   list-style: none;
+}
+
+@media screen and (min-width: 767px){
+  main{
+    text-align: left;
+  }
 }
